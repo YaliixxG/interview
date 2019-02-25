@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>自适应宽度，左右两栏固定宽度，中间栏优先加载</title>
+    <style>
+      div {
+        float: left;
+      }
+      .sider_l {
+        width: 200px;
+        position: absolute;
+        left: 0;
+        background: lawngreen;
+      }
+      .middle_content {
+        position: relative;
+        left: 200px;
+        background: lightcoral;
+      }
+      .sider_r {
+        width: 200px;
+        float: right;
+        background: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <!-- 把中间栏放在前面，优先加载 -->
+      <div class="middle_content"></div>
+      <div class="sider_l">左边栏</div>
+      <div class="sider_r">右边栏</div>
+    </div>
+  </body>
+</html>
