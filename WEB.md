@@ -17,31 +17,31 @@
 
 2. 从服务商角度而言，优化能够减少页面请求数、或者减小请求所占带宽，能够节省可观的源。
 
-WEB 性能优化可以从四个方面开始：
+   * WEB 性能优化可以从四个方面开始：
 
-内容方面：
+        * 内容方面：
 
-减少 HTTP 请求
-减少 DOM 元素数量
-使得 Ajax 可缓存（将获取的结果存入变量或缓存中）
+            减少 HTTP 请求  
+            减少 DOM 元素数量  
+            使得 Ajax 可缓存（将获取的结果存入变量或缓存中）
 
-针对 CSS：
+        * 针对 CSS：
 
-把 CSS 放到代码页上端
-从页面中剥离 JavaScript 与 CSS
-精简 JavaScript 与 CSS
-避免 CSS 表达式（不设置动态的 css 属性）
+            把 CSS 放到代码页上端  
+            从页面中剥离 JavaScript 与 CSS  
+            精简 JavaScript 与 CSS  
+            避免 CSS 表达式（不设置动态的 css 属性）
 
-针对 JavaScript ：
+        * 针对 JavaScript ：
 
-脚本放到 HTML 代码页底部
-从页面中剥离 JavaScript 与 CSS
-精简 JavaScript 与 CSS
-移除重复脚本
+            脚本放到 HTML 代码页底部  
+            从页面中剥离 JavaScript 与 CSS  
+            精简 JavaScript 与 CSS  
+            移除重复脚本
 
-面向图片(Image)：
+        * 面向图片(Image)：
 
-优化图片
-不要在 HTML 中使用缩放图片
-使用恰当的图片格式（颜色较多使用 JPG，颜色较少使用 PNG 等等）
-使用 CSS Sprites 技巧对图片优化（精灵图，雪碧图）
+            优化图片  
+            不要在 HTML 中使用缩放图片  
+            使用恰当的图片格式（颜色较多使用 JPG，颜色较少使用 PNG 等等）  
+            使用 CSS Sprites 技巧对图片优化（精灵图，雪碧图）
