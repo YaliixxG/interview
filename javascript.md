@@ -142,3 +142,38 @@ function removeCookie(key){
   setCookie(key,'',-1)
 }
 ```
+
+#### 用JS来实现动画效果  
+答：可以用定时器或者`requestAnimationFrame`（浏览器用于定时循环操作的一个接口，类似于setTimeout，主要用途是按帧对网页进行重绘。在于充分利用显示器的刷新机制，比较节省系统资源。）  
+[实例](./demo/requestAnimationFrame.js)
+
+#### 关于var重复声明的问题，看下段代码会弹出什么结果？  
+```js
+//问题
+var a = 100;
+function fn() {
+    alert(a); 
+    var a = 200;
+    alert(a); 
+}
+fn();
+alert(a); 
+var a;
+alert(a);  
+var a = 300;
+alert(a); 
+
+//答案  
+var a = 100;
+function fn() {
+    alert(a); //undefined
+    var a = 200;
+    alert(a); //200
+}
+fn();
+alert(a); //100
+var a; 
+alert(a);  //100
+var a = 300;
+alert(a); //300
+```
