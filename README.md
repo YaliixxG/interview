@@ -7,7 +7,8 @@
 
 1. 请解释一下 DOCTYPE 的作用，有 DOCTYPE 和没有 DOCTYPE 有什么区别？
 2. 写一个三栏的布局，要求中间栏最先加载？
-3. 树的遍历方式有哪些，简单介绍下方法？
+3. 树的遍历方式有哪些，简单介绍下方法？  
+4. 使用addEventListener点击li弹出内容，并且动态添加li之后有效
 
 ## CSS [详情](https://github.com/YaliixxG/interview/blob/master/CSS.md)
 
@@ -20,7 +21,8 @@
 3. 怎么设置和获得以及删除 cookie?
 4. 用 JS 来实现动画效果
 
-5. 关于 var 重复声明的问题，看下段代码会弹出什么结果？
+5. 关于 var 重复声明的问题，看下段代码会弹出什么结果？  
+6. 一行代码实现数组去重
 
 ## WEB 浏览器 [详情](https://github.com/YaliixxG/interview/blob/master/WEB.md)
 

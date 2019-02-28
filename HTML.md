@@ -12,3 +12,22 @@
 #### 树的遍历方式有哪些，简单介绍下方法？
 
 答：树的遍历方式有两种：深度优先和广度优先。深度优先是先遍历层级关系，广度优先是先遍历同层次的节点
+
+#### 使用addEventListener点击li弹出内容，并且动态添加li之后有效   
+```JS
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+</ul>
+
+//JS
+var ulNode = document.getElementById("ul");
+    ulNode.addEventListener('click', function (e) {
+        if (e.target && e.target.nodeName.toUpperCase() == "LI") {
+            alert(e.target.innerHTML);
+        }
+    }, false);
+```   
+[实例](./demo/addEventListener.html)
