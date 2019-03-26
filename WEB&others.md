@@ -1,4 +1,4 @@
-# WEB
+# WEB & Others
 
 #### 谈谈你对 WEB 标准的理解
 
@@ -90,4 +90,23 @@ CSRF 攻击的过程：
 
 - 验证 HTTP Referer 字段 （根据 HTTP 协议，在 HTTP 头中有一个字段叫 Referer，它记录了该 HTTP 请求的来源地址。）
 - 在请求地址中添加 token 并验证
-- 在 HTTP 头中自定义属性并验证
+- 在 HTTP 头中自定义属性并验证  
+
+#### 理解 `MVC`, `MVVM`, `Flux` 的区别  
+
+ MVC模式是MVP,MVVM模式的基础，这两种模式更像是MVC模式的优化改良版,他们三个的MV即Model，view相同，不同的是MV之间的纽带部分。
+1. MVC：（单向绑定）如果前端没有框架，只使用原生的html+js，MVC模式可以这样理解。将html看成view;js看成controller，负责处理用户与应用的交互，响应对view的操作（对事件的监听），调用Model对数据进行操作，完成model与view的同步（根据model的改变，通过选择器对view进行操作）;将js的ajax当做Model，也就是数据层，通过ajax从服务器获取数据。  
+
+2. MVVM：（双向绑定）MVVM与MVC最大的区别就是：它实现了View和Model的自动同步，也就是当Model的属性改变时，我们不用再自己手动操作Dom元素，来改变View的显示，而是改变属性后该属性对应View层显示会自动改变。  
+
+3. Flux：（数据的单向流动）  
+  * 用户访问 View（视图层）
+  * View 发出用户的 Action （动作）
+  * Dispatcher（派发器） 收到 Action，要求 Store 进行相应的更新
+  * Store（数据层） 更新后，发出一个"change"事件
+  * View 收到"change"事件后，更新页面  
+
+    ![flux图](./img/flux.png)
+
+
+
