@@ -24,7 +24,7 @@
 5. 关于 var 重复声明的问题，看下段代码会弹出什么结果？  
 6. 一行代码实现数组去重
 
-## WEB 浏览器 [详情](https://github.com/YaliixxG/interview/blob/master/WEB.md)
+## WEB 浏览器 & Others [详情](https://github.com/YaliixxG/interview/blob/master/WEB.md)
 
 1. 谈谈你对 WEB 标准的理解
 2. 请说说你对 WEB 性能优化的理解
